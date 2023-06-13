@@ -22,7 +22,7 @@ namespace WeatherStation
             public string icon { get; set; }
         }
 
-        public class WeatherInfo
+        public class main
         {
             public double temperature { get; set; }
             public double pressure { get; set; }
@@ -43,8 +43,8 @@ namespace WeatherStation
         {
             public Coordinates coordinates { get; set; }
             public List<Weather> weather { get; set; }
-            public WeatherInfo weatherInfo { get; set; }
-            public wind windInfo { get; set; }
+            public main main { get; set; }
+            public wind wind { get; set; }
             public Sys sys { get; set; }
         }
     }

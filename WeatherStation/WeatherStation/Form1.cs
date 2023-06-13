@@ -29,8 +29,8 @@ namespace WeatherStation
                 detail_textBox.Text = info.weather[0].description;
                 sunset_textBox.Text = convertTime(info.sys.sunset).ToString();
                 sunrise_textBox.Text = convertTime(info.sys.sunrise).ToString();
-                windspeed_textBox.Text = info.windInfo?.speed.ToString();
-                pressure_textBox.Text = info.weatherInfo?.pressure.ToString();
+                windspeed_textBox.Text = info.wind.speed.ToString();
+                pressure_textBox.Text = info.main.pressure.ToString();
             }
         }
 
