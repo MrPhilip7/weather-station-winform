@@ -28,9 +28,9 @@ namespace WeatherStation
             public double pressure { get; set; }
             public double humidity { get; set; }
         }
-        public class WindInfo
+        public class wind
         {
-            public string speed { get; set; }
+            public double speed { get; set; }
         }
 
         public class Sys
@@ -39,10 +39,13 @@ namespace WeatherStation
             public string sunset { get; set;}
         }
 
-        public class Root
+        public class WeatherDataNames
         {
             public Coordinates coordinates { get; set; }
             public List<Weather> weather { get; set; }
+            public WeatherInfo weatherInfo { get; set; }
+            public wind windInfo { get; set; }
+            public Sys sys { get; set; }
         }
     }
 }

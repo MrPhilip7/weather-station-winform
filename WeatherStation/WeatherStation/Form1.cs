@@ -23,9 +23,22 @@ namespace WeatherStation
             {
                 string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", city_textBox.Text, APIkey);
                 var json = web.DownloadString(url);
-                WeatherData.WeatherDataNames Info = JsonConvert.DeserializeObject<WeatherData.WeatherDataNames>(json);
-                picWeather.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                WeatherData.WeatherDataNames info = JsonConvert.DeserializeObject<WeatherData.WeatherDataNames>(json);
+                picWeather.ImageLocation = "https://openweathermap.org/img/w/" + info.weather[0].icon + ".png";
+                conditions_textBox.Text = info.weather[0].main;
+                detail_textBox.Text = info.weather[0].description;
+                sunset_textBox.Text = convertTime(info.sys.sunset).ToString();
+                sunrise_textBox.Text = convertTime(info.sys.sunrise).ToString();
+                windspeed_textBox.Text = info.windInfo?.speed.ToString();
+                pressure_textBox.Text = info.weatherInfo?.pressure.ToString();
             }
+        }
+
+        private object convertTime(string millisec)
+        {
+            DateTime daySun = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            daySun = daySun.AddSeconds(double.Parse(millisec)).ToLocalTime();
+            return daySun;
         }
     }
 }
