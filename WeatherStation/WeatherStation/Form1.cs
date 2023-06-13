@@ -6,5 +6,6 @@ namespace WeatherStation
         {
             InitializeComponent();
         }
+
     }
 }
