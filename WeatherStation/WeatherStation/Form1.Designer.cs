@@ -45,13 +45,21 @@
             label5 = new Label();
             sunset_textBox = new TextBox();
             picWeather = new PictureBox();
+            btnPressurePlus = new Button();
+            btnWindPlus = new Button();
+            btnPressureMin = new Button();
+            btnWindMin = new Button();
+            label9 = new Label();
+            temp_textBox = new TextBox();
+            btnTempPlus = new Button();
+            btnTempMin = new Button();
             ((System.ComponentModel.ISupportInitialize)picWeather).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(596, 118);
+            label1.Location = new Point(509, 195);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
             label1.TabIndex = 0;
@@ -59,7 +67,7 @@
             // 
             // detail_textBox
             // 
-            detail_textBox.Location = new Point(689, 115);
+            detail_textBox.Location = new Point(647, 192);
             detail_textBox.Name = "detail_textBox";
             detail_textBox.Size = new Size(86, 23);
             detail_textBox.TabIndex = 1;
@@ -67,7 +75,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(596, 167);
+            label2.Location = new Point(509, 244);
             label2.Name = "label2";
             label2.Size = new Size(45, 15);
             label2.TabIndex = 2;
@@ -75,15 +83,15 @@
             // 
             // sunrise_textBox
             // 
-            sunrise_textBox.Location = new Point(689, 164);
+            sunrise_textBox.Location = new Point(618, 241);
             sunrise_textBox.Name = "sunrise_textBox";
-            sunrise_textBox.Size = new Size(86, 23);
+            sunrise_textBox.Size = new Size(115, 23);
             sunrise_textBox.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(596, 262);
+            label3.Location = new Point(509, 68);
             label3.Name = "label3";
             label3.Size = new Size(51, 15);
             label3.TabIndex = 4;
@@ -91,7 +99,7 @@
             // 
             // pressure_textBox
             // 
-            pressure_textBox.Location = new Point(689, 259);
+            pressure_textBox.Location = new Point(647, 65);
             pressure_textBox.Name = "pressure_textBox";
             pressure_textBox.Size = new Size(86, 23);
             pressure_textBox.TabIndex = 5;
@@ -99,7 +107,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(596, 308);
+            label4.Location = new Point(509, 114);
             label4.Name = "label4";
             label4.Size = new Size(70, 15);
             label4.TabIndex = 6;
@@ -107,7 +115,7 @@
             // 
             // windspeed_textBox
             // 
-            windspeed_textBox.Location = new Point(689, 305);
+            windspeed_textBox.Location = new Point(647, 111);
             windspeed_textBox.Name = "windspeed_textBox";
             windspeed_textBox.Size = new Size(86, 23);
             windspeed_textBox.TabIndex = 7;
@@ -115,7 +123,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(596, 75);
+            label6.Location = new Point(509, 152);
             label6.Name = "label6";
             label6.Size = new Size(65, 15);
             label6.TabIndex = 10;
@@ -123,7 +131,7 @@
             // 
             // conditions_textBox
             // 
-            conditions_textBox.Location = new Point(689, 72);
+            conditions_textBox.Location = new Point(647, 149);
             conditions_textBox.Name = "conditions_textBox";
             conditions_textBox.Size = new Size(86, 23);
             conditions_textBox.TabIndex = 11;
@@ -146,12 +154,13 @@
             // 
             // data_button
             // 
+            data_button.BackColor = SystemColors.Info;
             data_button.Location = new Point(329, 152);
             data_button.Name = "data_button";
             data_button.Size = new Size(120, 40);
             data_button.TabIndex = 14;
             data_button.Text = "Check weather";
-            data_button.UseVisualStyleBackColor = true;
+            data_button.UseVisualStyleBackColor = false;
             data_button.Click += data_button_Click;
             // 
             // label8
@@ -166,7 +175,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(596, 214);
+            label5.Location = new Point(509, 291);
             label5.Name = "label5";
             label5.Size = new Size(42, 15);
             label5.TabIndex = 16;
@@ -174,9 +183,9 @@
             // 
             // sunset_textBox
             // 
-            sunset_textBox.Location = new Point(689, 211);
+            sunset_textBox.Location = new Point(618, 288);
             sunset_textBox.Name = "sunset_textBox";
-            sunset_textBox.Size = new Size(86, 23);
+            sunset_textBox.Size = new Size(115, 23);
             sunset_textBox.TabIndex = 17;
             // 
             // picWeather
@@ -187,11 +196,103 @@
             picWeather.TabIndex = 18;
             picWeather.TabStop = false;
             // 
+            // btnPressurePlus
+            // 
+            btnPressurePlus.BackColor = Color.FromArgb(128, 255, 128);
+            btnPressurePlus.Location = new Point(739, 65);
+            btnPressurePlus.Name = "btnPressurePlus";
+            btnPressurePlus.Size = new Size(23, 24);
+            btnPressurePlus.TabIndex = 23;
+            btnPressurePlus.Text = "+";
+            btnPressurePlus.UseVisualStyleBackColor = false;
+            btnPressurePlus.Click += btnPressurePlus_Click;
+            // 
+            // btnWindPlus
+            // 
+            btnWindPlus.BackColor = Color.FromArgb(128, 255, 128);
+            btnWindPlus.Location = new Point(739, 111);
+            btnWindPlus.Name = "btnWindPlus";
+            btnWindPlus.Size = new Size(23, 24);
+            btnWindPlus.TabIndex = 24;
+            btnWindPlus.Text = "+";
+            btnWindPlus.UseVisualStyleBackColor = false;
+            btnWindPlus.Click += btnWindPlus_Click;
+            // 
+            // btnPressureMin
+            // 
+            btnPressureMin.BackColor = Color.FromArgb(255, 128, 128);
+            btnPressureMin.Location = new Point(618, 65);
+            btnPressureMin.Name = "btnPressureMin";
+            btnPressureMin.Size = new Size(23, 24);
+            btnPressureMin.TabIndex = 25;
+            btnPressureMin.Text = "-";
+            btnPressureMin.UseVisualStyleBackColor = false;
+            btnPressureMin.Click += btnPressureMin_Click;
+            // 
+            // btnWindMin
+            // 
+            btnWindMin.BackColor = Color.FromArgb(255, 128, 128);
+            btnWindMin.Location = new Point(618, 111);
+            btnWindMin.Name = "btnWindMin";
+            btnWindMin.Size = new Size(23, 24);
+            btnWindMin.TabIndex = 26;
+            btnWindMin.Text = "-";
+            btnWindMin.UseVisualStyleBackColor = false;
+            btnWindMin.Click += btnWindMin_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(511, 28);
+            label9.Name = "label9";
+            label9.Size = new Size(84, 15);
+            label9.TabIndex = 27;
+            label9.Text = "Temp(rand) °C";
+            // 
+            // temp_textBox
+            // 
+            temp_textBox.Location = new Point(647, 25);
+            temp_textBox.Name = "temp_textBox";
+            temp_textBox.Size = new Size(86, 23);
+            temp_textBox.TabIndex = 28;
+            temp_textBox.TextChanged += temp_textBox_TextChanged;
+            // 
+            // btnTempPlus
+            // 
+            btnTempPlus.BackColor = Color.FromArgb(128, 255, 128);
+            btnTempPlus.Location = new Point(739, 24);
+            btnTempPlus.Name = "btnTempPlus";
+            btnTempPlus.Size = new Size(23, 24);
+            btnTempPlus.TabIndex = 29;
+            btnTempPlus.Text = "+";
+            btnTempPlus.UseVisualStyleBackColor = false;
+            btnTempPlus.Click += btnTempPlus_Click;
+            // 
+            // btnTempMin
+            // 
+            btnTempMin.BackColor = Color.FromArgb(255, 128, 128);
+            btnTempMin.Location = new Point(618, 23);
+            btnTempMin.Name = "btnTempMin";
+            btnTempMin.Size = new Size(23, 24);
+            btnTempMin.TabIndex = 30;
+            btnTempMin.Text = "-";
+            btnTempMin.UseVisualStyleBackColor = false;
+            btnTempMin.Click += btnTempMin_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnTempMin);
+            Controls.Add(btnTempPlus);
+            Controls.Add(temp_textBox);
+            Controls.Add(label9);
+            Controls.Add(btnWindMin);
+            Controls.Add(btnPressureMin);
+            Controls.Add(btnWindPlus);
+            Controls.Add(btnPressurePlus);
             Controls.Add(picWeather);
             Controls.Add(sunset_textBox);
             Controls.Add(label5);
@@ -209,6 +310,7 @@
             Controls.Add(label2);
             Controls.Add(detail_textBox);
             Controls.Add(label1);
+            ForeColor = SystemColors.ControlText;
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)picWeather).EndInit();
@@ -235,5 +337,13 @@
         private Label label5;
         private TextBox sunset_textBox;
         private PictureBox picWeather;
+        private Button btnPressurePlus;
+        private Button btnWindPlus;
+        private Button btnPressureMin;
+        private Button btnWindMin;
+        private Label label9;
+        private TextBox temp_textBox;
+        private Button btnTempPlus;
+        private Button btnTempMin;
     }
 }
