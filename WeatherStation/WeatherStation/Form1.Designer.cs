@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             detail_textBox = new TextBox();
             label2 = new Label();
@@ -41,7 +42,6 @@
             label7 = new Label();
             city_textBox = new TextBox();
             data_button = new Button();
-            label8 = new Label();
             label5 = new Label();
             sunset_textBox = new TextBox();
             picWeather = new PictureBox();
@@ -163,15 +163,6 @@
             data_button.UseVisualStyleBackColor = false;
             data_button.Click += data_button_Click;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(135, 28);
-            label8.Name = "label8";
-            label8.Size = new Size(107, 15);
-            label8.TabIndex = 15;
-            label8.Text = "WEATHER STATION";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -190,6 +181,7 @@
             // 
             // picWeather
             // 
+            picWeather.BackColor = Color.Transparent;
             picWeather.Location = new Point(634, 360);
             picWeather.Name = "picWeather";
             picWeather.Size = new Size(100, 50);
@@ -284,6 +276,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(btnTempMin);
             Controls.Add(btnTempPlus);
@@ -296,7 +290,6 @@
             Controls.Add(picWeather);
             Controls.Add(sunset_textBox);
             Controls.Add(label5);
-            Controls.Add(label8);
             Controls.Add(data_button);
             Controls.Add(city_textBox);
             Controls.Add(label7);
@@ -333,7 +326,6 @@
         private Label label7;
         private TextBox city_textBox;
         private Button data_button;
-        private Label label8;
         private Label label5;
         private TextBox sunset_textBox;
         private PictureBox picWeather;
