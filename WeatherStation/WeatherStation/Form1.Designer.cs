@@ -59,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(509, 195);
+            label1.Location = new Point(509, 189);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
             label1.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             // detail_textBox
             // 
-            detail_textBox.Location = new Point(647, 192);
+            detail_textBox.Location = new Point(647, 186);
             detail_textBox.Name = "detail_textBox";
             detail_textBox.Size = new Size(86, 23);
             detail_textBox.TabIndex = 1;
@@ -75,7 +75,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(509, 244);
+            label2.Location = new Point(509, 238);
             label2.Name = "label2";
             label2.Size = new Size(45, 15);
             label2.TabIndex = 2;
@@ -83,7 +83,7 @@
             // 
             // sunrise_textBox
             // 
-            sunrise_textBox.Location = new Point(618, 241);
+            sunrise_textBox.Location = new Point(618, 235);
             sunrise_textBox.Name = "sunrise_textBox";
             sunrise_textBox.Size = new Size(115, 23);
             sunrise_textBox.TabIndex = 3;
@@ -107,7 +107,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(509, 114);
+            label4.Location = new Point(509, 108);
             label4.Name = "label4";
             label4.Size = new Size(70, 15);
             label4.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             // windspeed_textBox
             // 
-            windspeed_textBox.Location = new Point(647, 111);
+            windspeed_textBox.Location = new Point(647, 105);
             windspeed_textBox.Name = "windspeed_textBox";
             windspeed_textBox.Size = new Size(86, 23);
             windspeed_textBox.TabIndex = 7;
@@ -123,7 +123,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(509, 152);
+            label6.Location = new Point(509, 146);
             label6.Name = "label6";
             label6.Size = new Size(65, 15);
             label6.TabIndex = 10;
@@ -131,7 +131,7 @@
             // 
             // conditions_textBox
             // 
-            conditions_textBox.Location = new Point(647, 149);
+            conditions_textBox.Location = new Point(647, 143);
             conditions_textBox.Name = "conditions_textBox";
             conditions_textBox.Size = new Size(86, 23);
             conditions_textBox.TabIndex = 11;
@@ -154,7 +154,7 @@
             // 
             // data_button
             // 
-            data_button.BackColor = SystemColors.Info;
+            data_button.BackColor = SystemColors.InactiveBorder;
             data_button.Location = new Point(329, 152);
             data_button.Name = "data_button";
             data_button.Size = new Size(120, 40);
@@ -166,7 +166,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(509, 291);
+            label5.Location = new Point(509, 285);
             label5.Name = "label5";
             label5.Size = new Size(42, 15);
             label5.TabIndex = 16;
@@ -174,7 +174,7 @@
             // 
             // sunset_textBox
             // 
-            sunset_textBox.Location = new Point(618, 288);
+            sunset_textBox.Location = new Point(618, 282);
             sunset_textBox.Name = "sunset_textBox";
             sunset_textBox.Size = new Size(115, 23);
             sunset_textBox.TabIndex = 17;
@@ -202,7 +202,7 @@
             // btnWindPlus
             // 
             btnWindPlus.BackColor = Color.FromArgb(128, 255, 128);
-            btnWindPlus.Location = new Point(739, 111);
+            btnWindPlus.Location = new Point(739, 105);
             btnWindPlus.Name = "btnWindPlus";
             btnWindPlus.Size = new Size(23, 24);
             btnWindPlus.TabIndex = 24;
@@ -224,7 +224,7 @@
             // btnWindMin
             // 
             btnWindMin.BackColor = Color.FromArgb(255, 128, 128);
-            btnWindMin.Location = new Point(618, 111);
+            btnWindMin.Location = new Point(618, 105);
             btnWindMin.Name = "btnWindMin";
             btnWindMin.Size = new Size(23, 24);
             btnWindMin.TabIndex = 26;
